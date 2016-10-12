@@ -6,7 +6,7 @@ public class CillisonScript : MonoBehaviour {
 		Debug.Log ("Enter Called");
 
 		if (collision.gameObject.name == "wall") {
-			Destroy (collision.gameObject);
+			Destroy(collision.gameObject);
 		}
 
 		if (collision.gameObject.name == "SpeedRing(Clone)") {
@@ -15,5 +15,11 @@ public class CillisonScript : MonoBehaviour {
 			FOV.SpeedBoost();
 			MoveForward.SpeedRingBoost();
 		}
+
+        if (collision.gameObject.name == "Cube") {
+
+            Debug.Log("Collision");
+            Destroy(collision.gameObject);
+        }
 	}
 }
