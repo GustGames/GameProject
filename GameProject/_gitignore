@@ -1,0 +1,40 @@
+######################
+#   Unity Generated  #
+######################
+
+[Tt]emp/
+[Oo]bj/
+[Bb]uild/
+/[Ll]obrary/
+sysinfo.txt
+*.stackdump
+
+
+###################################
+#   Visual Studio / MonoDevelop   #
+###################################
+
+[Ee]xported[Oo]bj/
+.vs/
+/*userprefs
+/*.userprefs
+/*.csproj
+/*.pidb
+/*.suo
+/*.sln*
+/*.user
+/*.unityproj
+/*.booproj
+/*.idea*/
+
+
+####################
+#   OS generated   #
+####################
+
+.DS_Store*
+._*
+.Spotlight-V100
+.Trashes
+[Tt]humbs.db
+[Dd]esktoip.ini

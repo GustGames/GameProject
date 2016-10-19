@@ -15,11 +15,11 @@ public class CillisonScript : MonoBehaviour {
 			FOV.SpeedBoost();
 			MoveForward.SpeedRingBoost();
 		}
-
-        if (collision.gameObject.name == "Cube") {
-
-            Debug.Log("Collision");
-            Destroy(collision.gameObject);
-        }
+		if (collision.gameObject.name == "Astroid(Clone)") {
+			Destroy (collision.gameObject);
+			Debug.Log ("SPEED DOWN");
+			FOV.SpeedDown();
+			MoveForward.SpeedAstroidDown();
+		}
 	}
 }
