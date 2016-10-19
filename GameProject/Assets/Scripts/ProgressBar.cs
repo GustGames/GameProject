@@ -8,17 +8,15 @@ public class ProgressBar : MonoBehaviour {
 	public int Amount = 0;
 	// Use this for initialization
 	void Start () {
-	
-	}
-	public void OnValidate()
-	{
-		float amount = (Amount / 100.0f);
 
-		background.fillAmount = amount;
-		Txtprogress.text = string.Format ("{0} %", Amount);
 	}
+
 	// Update is called once per frame
 	void Update () {
-	
+		float speed = MoveForward.speed;
+		float amount = (MoveForward.speed / 500.0f);
+		int percent = (int)speed/10;
+		background.fillAmount = amount;
+		Txtprogress.text = string.Format ("{0} %", percent);
 	}
 }

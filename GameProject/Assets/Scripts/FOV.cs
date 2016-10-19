@@ -50,4 +50,9 @@ public class FOV : MonoBehaviour {
 
 		Camera.main.fieldOfView += 5;
 	}
+	public static void SpeedDown()
+	{
+		
+		Camera.main.fieldOfView -= 5;
+	}
 }
