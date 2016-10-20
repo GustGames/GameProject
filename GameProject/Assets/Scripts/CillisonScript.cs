@@ -45,6 +45,5 @@ public class CillisonScript : MonoBehaviour {
 			MoveForward.SpeedAstroidDown();
 		}
 
-
 	}
 }
