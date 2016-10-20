@@ -17,7 +17,7 @@ public class CameraMovement : MonoBehaviour {
 		Vector3 newPosition = objectToFollow.position;
 		newPosition.x *= movementRatio.x;
 		newPosition.y *= movementRatio.y;
-		//newPosition.z = transform.position.z;
+		newPosition.z = transform.position.z;
 		transform.position = newPosition;
 	}
 }

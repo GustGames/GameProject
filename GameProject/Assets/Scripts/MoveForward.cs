@@ -37,7 +37,7 @@ public class MoveForward : MonoBehaviour {
 	public static void SpeedAstroidDown() 
 	{
 		Debug.Log ("BOOST IN SPEED!");
-		speed -= 50.0f;
+		 m speed -= 50.0f;
 		ShipMovement.movementSpeed -= 1.0f;
 		print (ShipMovement.movementSpeed);
 		print (speed);

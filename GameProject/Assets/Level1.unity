@@ -507,7 +507,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   objectToFollow: {fileID: 172461365}
-  movementRatio: {x: .5, y: .5}
+  movementRatio: {x: .5, y: .5, z: 1}
 --- !u!1 &1923102273 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 152560, guid: 87965b40202433d4abe3a2d0745cd6cf, type: 2}

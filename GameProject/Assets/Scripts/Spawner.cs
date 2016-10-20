@@ -7,10 +7,10 @@ public class Spawner : MonoBehaviour {
 	public GameObject PlayerShip;
 	
 	void Start () {
-		InvokeRepeating ("SpawnSpeedRing", 5, 5);
+		//InvokeRepeating ("SpawnSpeedRing", 5, 5);
 		InvokeRepeating ("SpawnAstroid", 3, 3);
 		InvokeRepeating ("SpawnAstroid", 1, 1);
-		SpawnSpeedRing();
+		//SpawnSpeedRing();
 
 	}
 

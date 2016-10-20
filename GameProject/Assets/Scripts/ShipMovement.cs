@@ -3,13 +3,14 @@ using System.Collections;
 
 public class ShipMovement : MonoBehaviour
 {
-	public float movementSpeed = 1.0f;
+	public static float movementSpeed;
 	public int width;
 	public int height;
 	void Start ()
 	{
-		//Vector3 minScreenBounds = Camera.main.ScreenToWorldPoint(new Vector3(0, 0, 0));
-		//Vector3 maxScreenBounds = Camera.main.ScreenToWorldPoint(new Vector3(Screen.width, Screen.height, 0));
+		movementSpeed = 5.0f;
+		Vector3 minScreenBounds = Camera.main.ScreenToWorldPoint(new Vector3(0, 0, 0));
+		Vector3 maxScreenBounds = Camera.main.ScreenToWorldPoint(new Vector3(Screen.width, Screen.height, 0));
 	}
 
 	// Update is called once per frame
