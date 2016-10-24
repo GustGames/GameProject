@@ -15,7 +15,7 @@ public class ProgressBar : MonoBehaviour {
 	void Update () {
 		float speed = MoveForward.speed;
 		float amount = (MoveForward.speed / 500.0f);
-		int percent = (int)speed/10;
+		int percent = (int)speed/5;
 		background.fillAmount = amount;
 		Txtprogress.text = string.Format ("{0} %", percent);
 	}

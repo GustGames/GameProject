@@ -11,13 +11,11 @@ public class CillisonScript : MonoBehaviour {
 
 		if (collision.gameObject.name == "SpeedRing(Clone)") {
 			Destroy (collision.gameObject);
-			Debug.Log ("SPEED BOOST");
 			FOV.SpeedBoost();
 			MoveForward.SpeedRingBoost();
 		}
 		if (collision.gameObject.name == "Astroid(Clone)") {
 			Destroy (collision.gameObject);
-			Debug.Log ("SPEED DOWN");
 			FOV.SpeedDown();
 			MoveForward.SpeedAstroidDown();
 		}
