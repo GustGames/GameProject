@@ -12,7 +12,6 @@ GameObject:
   - 136: {fileID: 13685062}
   - 23: {fileID: 2323768}
   - 114: {fileID: 11406138}
-  - 54: {fileID: 5451104}
   - 114: {fileID: 11482322}
   m_Layer: 0
   m_Name: SpeedRing
@@ -27,9 +26,9 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 125984}
-  m_LocalRotation: {x: -.707107067, y: 0, z: 0, w: .70710659}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: .0700000003, y: .200000003, z: 39.0400009}
-  m_LocalScale: {x: 6.30000019, y: .191094011, z: 6.30000019}
+  m_LocalScale: {x: 2.5, y: 2.5, z: 2.5}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -63,7 +62,7 @@ MeshFilter:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 125984}
-  m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
+  m_Mesh: {fileID: 4300000, guid: 6186ffb2c1df8a449aa7f0e295323d25, type: 3}
 --- !u!114 &11406138
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -112,14 +111,30 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: m_LocalScale.x
-      value: 6.30000019
+      value: 2.5
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: m_LocalScale.z
-      value: 6.30000019
+      value: 2.5
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: m_Mesh
+      value: 
+      objectReference: {fileID: 4300000, guid: 6186ffb2c1df8a449aa7f0e295323d25, type: 3}
+    - target: {fileID: 0}
+      propertyPath: m_LocalScale.y
+      value: 2.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: m_LocalRotation.w
       value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
