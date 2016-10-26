@@ -25,8 +25,8 @@ public class CillisonScript : MonoBehaviour {
 	void OnCollisionEnter ( Collision collision ){
 		Debug.Log ("Enter Called");
 
-		if (collision.gameObject.name == "wall") {
-			Destroy (collision.gameObject);
+		if (collision.gameObject.name == "MovingLevel") {
+
 		}
 
 		if (collision.gameObject.name == "SpeedRing(Clone)") {

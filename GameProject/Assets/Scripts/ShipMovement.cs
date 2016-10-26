@@ -22,7 +22,7 @@ public class ShipMovement : MonoBehaviour
 		Vector3 finalDirection = new Vector3(horizontal,vertical,5.0f);
 		transform.position += direction*movementSpeed*Time.deltaTime;
 		transform.rotation = Quaternion.RotateTowards(transform.rotation,Quaternion.LookRotation
-		                                              (finalDirection),Mathf.Deg2Rad*30.0f);
+		                                              (finalDirection),Mathf.Deg2Rad*50.0f);
 
 		float widthRel = width / (Screen.width);
 		float heightRel= height /(Screen.height); 

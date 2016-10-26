@@ -12,7 +12,6 @@ GameObject:
   - 136: {fileID: 13685062}
   - 23: {fileID: 2323768}
   - 114: {fileID: 11406138}
-  - 54: {fileID: 5451104}
   - 114: {fileID: 11482322}
   m_Layer: 0
   m_Name: SpeedRing
@@ -64,21 +63,6 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 125984}
   m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
---- !u!54 &5451104
-Rigidbody:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 125984}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: .0500000007
-  m_UseGravity: 0
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
 --- !u!114 &11406138
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -96,7 +80,7 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 125984}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 840341816c10c694994cf00c68ee81ad, type: 3}
   m_Name: 
