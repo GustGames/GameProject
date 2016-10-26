@@ -18,7 +18,7 @@ public class ShipMovement : MonoBehaviour
 	{
 		float horizontal = Input.GetAxis("Horizontal");
 		float vertical = Input.GetAxis("Vertical");
-		Vector3 direction = new Vector3(horizontal,vertical,0);
+		Vector3 direction = new Vector3(0,vertical,0);
 		Vector3 finalDirection = new Vector3(horizontal,vertical,5.0f);
 		transform.position += direction*movementSpeed*Time.deltaTime;
 		transform.rotation = Quaternion.RotateTowards(transform.rotation,Quaternion.LookRotation
@@ -31,6 +31,10 @@ public class ShipMovement : MonoBehaviour
 		viewPos.x = Mathf.Clamp(viewPos.x, widthRel, 1-widthRel);
 		viewPos.y = Mathf.Clamp(viewPos.y, heightRel, 1-heightRel);
 		this.transform.position = Camera.main.ViewportToWorldPoint (viewPos);
+
+		if (movementSpeed < 5) {
+			movementSpeed = 5;
+		}
 
 	}
 }

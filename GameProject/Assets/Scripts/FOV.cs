@@ -4,13 +4,14 @@ using System.Collections;
 public class FOV : MonoBehaviour {
 
 	public float fov = 90f;
-	public bool warp,startwarp = false;
+	public bool warp,startwarp,sboost = false;
 
 	// Use this for initialization
 
 	void Start (){
 		Camera.main.fieldOfView = 170;		 
 		warp = false;
+		sboost = false;
 
 	}
 	// Update is called once per frame
@@ -45,8 +46,21 @@ public class FOV : MonoBehaviour {
 		Camera.main.fieldOfView = Mathf.Lerp (Camera.main.fieldOfView, 220, 1 * Time.deltaTime);		 
 	}
 
+<<<<<<< HEAD
 	public static void SpeedBoost(){
 	}
 	public static void SpeedDown(){
+=======
+	public static void SpeedBoost()
+	{
+
+
+
+	}
+	public static void SpeedDown()
+	{
+		
+
+>>>>>>> refs/remotes/origin/master
 	}
 }
