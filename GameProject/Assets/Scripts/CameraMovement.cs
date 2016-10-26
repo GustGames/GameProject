@@ -4,7 +4,7 @@ using System.Collections;
 public class CameraMovement : MonoBehaviour {
 
 	public Transform objectToFollow;
-	public Vector3 movementRatio = Vector3.one;
+	public Vector2 movementRatio = Vector2.one;
 
 	// Use this for initialization
 	void Start () {

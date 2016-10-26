@@ -45,14 +45,8 @@ public class FOV : MonoBehaviour {
 		Camera.main.fieldOfView = Mathf.Lerp (Camera.main.fieldOfView, 220, 1 * Time.deltaTime);		 
 	}
 
-	public static void SpeedBoost()
-	{
-
-		Camera.main.fieldOfView += 5;
+	public static void SpeedBoost(){
 	}
-	public static void SpeedDown()
-	{
-		
-		Camera.main.fieldOfView -= 5;
+	public static void SpeedDown(){
 	}
 }

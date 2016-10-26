@@ -25,7 +25,7 @@ public class CillisonScript : MonoBehaviour {
 
 
 
-
+	/**
 	void OnCollisionEnter ( Collision collision ){
 		if (collision.gameObject.tag == "wall") {
 			Destroy(collision.gameObject);
@@ -46,4 +46,5 @@ public class CillisonScript : MonoBehaviour {
 		}
 
 	}
+	**/
 }
