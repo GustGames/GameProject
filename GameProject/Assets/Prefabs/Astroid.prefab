@@ -1,44 +1,43 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &125984
+--- !u!1 &194520
 GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   serializedVersion: 4
   m_Component:
-  - 4: {fileID: 442586}
-  - 33: {fileID: 3383132}
-  - 136: {fileID: 13685062}
-  - 23: {fileID: 2323768}
-  - 114: {fileID: 11406138}
-  - 54: {fileID: 5451104}
-  - 114: {fileID: 11482322}
+  - 4: {fileID: 405926}
+  - 33: {fileID: 3350118}
+  - 135: {fileID: 13561510}
+  - 23: {fileID: 2314234}
+  - 114: {fileID: 11489220}
+  - 54: {fileID: 5442478}
   m_Layer: 0
-  m_Name: SpeedRing
+  m_Name: Astroid
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &442586
+--- !u!4 &405926
 Transform:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 125984}
-  m_LocalRotation: {x: -.707107067, y: 0, z: 0, w: .70710659}
-  m_LocalPosition: {x: .0700000003, y: .200000003, z: 39.0400009}
-  m_LocalScale: {x: 6.30000019, y: .191094011, z: 6.30000019}
+  m_GameObject: {fileID: 194520}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 818.449524, y: 373.5867, z: 55.8343849}
+  m_LocalScale: {x: 4, y: 4, z: 4}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
---- !u!23 &2323768
+--- !u!23 &2314234
 MeshRenderer:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 125984}
+  m_GameObject: {fileID: 194520}
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
@@ -57,19 +56,19 @@ MeshRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingOrder: 0
---- !u!33 &3383132
+--- !u!33 &3350118
 MeshFilter:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 125984}
-  m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
---- !u!54 &5451104
+  m_GameObject: {fileID: 194520}
+  m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!54 &5442478
 Rigidbody:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 125984}
+  m_GameObject: {fileID: 194520}
   serializedVersion: 2
   m_Mass: 1
   m_Drag: 0
@@ -79,40 +78,28 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!114 &11406138
+--- !u!114 &11489220
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 125984}
+  m_GameObject: {fileID: 194520}
   m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1db518685ec32424caf143462e6c6a99, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &11482322
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 125984}
-  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 840341816c10c694994cf00c68ee81ad, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!136 &13685062
-CapsuleCollider:
+--- !u!135 &13561510
+SphereCollider:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 125984}
+  m_GameObject: {fileID: 194520}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
+  serializedVersion: 2
   m_Radius: .5
-  m_Height: 2
-  m_Direction: 1
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!1001 &100100000
 Prefab:
@@ -122,19 +109,23 @@ Prefab:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 0}
-      propertyPath: m_UseGravity
-      value: 0
+      propertyPath: m_LocalScale.x
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 0}
-      propertyPath: m_LocalScale.x
-      value: 6.30000019
+      propertyPath: m_LocalScale.y
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: m_LocalScale.z
-      value: 6.30000019
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: m_IsKinematic
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: m_UseGravity
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 0}
@@ -143,5 +134,5 @@ Prefab:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
-  m_RootGameObject: {fileID: 125984}
+  m_RootGameObject: {fileID: 194520}
   m_IsPrefabParent: 1
