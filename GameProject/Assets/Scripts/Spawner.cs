@@ -18,15 +18,17 @@ public class Spawner : MonoBehaviour {
 
 	}
 
-	void SpawnSpeedRing()
-	{
+	void SpawnSpeedRing(){
 		GameObject SpeedRingClone = Instantiate (SpeedRing, new Vector3 (Random.Range (-8, 8), Random.Range (-5, 5), (PlayerShip.transform.position.z + 250)), Quaternion.Euler (-90, 0, 0)) as GameObject;
-		SpeedRingClone.transform.parent = GameObject.Find("MovingLevel").transform;
+		if (Application.loadedLevelName == "Level1") {
+			SpeedRingClone.transform.parent = GameObject.Find("MovingLevel").transform;
+		}
 	}
-	void SpawnAstroid()
-	{
+	void SpawnAstroid()	{
 
 		GameObject AstroidClone = Instantiate (Astroid, new Vector3 (Random.Range (-8, 8), Random.Range (-5, 5), (PlayerShip.transform.position.z + 250)), Quaternion.Euler (-90, 0, 0)) as GameObject;
-		AstroidClone.transform.parent = GameObject.Find("MovingLevel").transform;
+		if (Application.loadedLevelName == "Level1") {
+			AstroidClone.transform.parent = GameObject.Find ("MovingLevel").transform;
+		}
 	}
 }

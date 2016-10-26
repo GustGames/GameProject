@@ -43,28 +43,5 @@ public class CillisonScript : MonoBehaviour {
 		} else {
 			Debug.Log ("No Collision");
 		}
-	}
-
-
-
-	/**
-	void OnCollisionEnter ( Collision collision ){
-		if (collision.gameObject.tag == "wall") {
-			Destroy(collision.gameObject);
-		}
-
-		if (collision.gameObject.tag == "SpeedRing(Clone)") {
-			Destroy (collision.gameObject);
-			FOV.SpeedBoost();
-			MoveForward.SpeedRingBoost();
-		}
-
-		if (collision.gameObject.name == "Astroid(Clone)") {
-			Destroy (collision.gameObject);
-			FOV.SpeedDown();
-			MoveForward.SpeedAstroidDown();
-		}
-
-	}
-	**/
+	}**/
 }

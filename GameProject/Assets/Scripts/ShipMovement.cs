@@ -18,11 +18,27 @@ public class ShipMovement : MonoBehaviour
 	{
 		float horizontal = Input.GetAxis("Horizontal");
 		float vertical = Input.GetAxis("Vertical");
-		Vector3 direction = new Vector3(0,vertical,0);
+
+		if (Application.loadedLevelName == "Level1") {
+			Vector3 direction = new Vector3(0,vertical,0);
+			Vector3 finalDirection = new Vector3(horizontal,vertical,5.0f);
+			transform.position += direction*movementSpeed*Time.deltaTime;
+			transform.rotation = Quaternion.RotateTowards(transform.rotation,Quaternion.LookRotation
+			                                              (finalDirection),Mathf.Deg2Rad*30.0f);
+		}
+		else if (Application.loadedLevelName == "Level2") {
+			Vector3 direction = new Vector3(horizontal,vertical,0);
+			Vector3 finalDirection = new Vector3(horizontal,vertical,5.0f);
+			transform.position += direction*movementSpeed*Time.deltaTime;
+			transform.rotation = Quaternion.RotateTowards(transform.rotation,Quaternion.LookRotation
+			                                              (finalDirection),Mathf.Deg2Rad*30.0f);
+		}
+		/**
 		Vector3 finalDirection = new Vector3(horizontal,vertical,5.0f);
 		transform.position += direction*movementSpeed*Time.deltaTime;
 		transform.rotation = Quaternion.RotateTowards(transform.rotation,Quaternion.LookRotation
 		                                              (finalDirection),Mathf.Deg2Rad*30.0f);
+		                                              **/
 
 		float widthRel = width / (Screen.width);
 		float heightRel= height /(Screen.height); 

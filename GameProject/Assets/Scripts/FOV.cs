@@ -45,22 +45,8 @@ public class FOV : MonoBehaviour {
 	void Warp(){
 		Camera.main.fieldOfView = Mathf.Lerp (Camera.main.fieldOfView, 220, 1 * Time.deltaTime);		 
 	}
-
-<<<<<<< HEAD
 	public static void SpeedBoost(){
 	}
 	public static void SpeedDown(){
-=======
-	public static void SpeedBoost()
-	{
-
-
-
-	}
-	public static void SpeedDown()
-	{
-		
-
->>>>>>> refs/remotes/origin/master
 	}
 }
