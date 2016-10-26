@@ -19,7 +19,7 @@ public class Spawner : MonoBehaviour {
 	}
 
 	void SpawnSpeedRing(){
-		GameObject SpeedRingClone = Instantiate (SpeedRing, new Vector3 (Random.Range (-8, 8), Random.Range (-5, 5), (PlayerShip.transform.position.z + 250)), Quaternion.Euler (-90, 0, 0)) as GameObject;
+		GameObject SpeedRingClone = Instantiate (SpeedRing, new Vector3 (Random.Range (-8, 8), Random.Range (-5, 5), (PlayerShip.transform.position.z + 250)), Quaternion.Euler (0, 0, 0)) as GameObject;
 		if (Application.loadedLevelName == "Level1") {
 			SpeedRingClone.transform.parent = GameObject.Find("MovingLevel").transform;
 		}
