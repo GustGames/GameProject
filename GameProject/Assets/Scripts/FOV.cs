@@ -16,7 +16,7 @@ public class FOV : MonoBehaviour {
 	}
 	// Update is called once per frame
 	void Update () {
-		if (Input.GetKey ("space") && MoveForward.speed >= 50 ) {
+		if (Input.GetKey ("space") && ProgressBar.percent >= 100 ) {
 			warp = true;
 		}
 		if (warp == true) {
@@ -45,8 +45,16 @@ public class FOV : MonoBehaviour {
 	void Warp(){
 		Camera.main.fieldOfView = Mathf.Lerp (Camera.main.fieldOfView, 220, 1 * Time.deltaTime);		 
 	}
-	public static void SpeedBoost(){
+
+	public static void SpeedBoost()
+	{
+
+
+
 	}
-	public static void SpeedDown(){
+	public static void SpeedDown()
+	{
+		
+
 	}
 }
