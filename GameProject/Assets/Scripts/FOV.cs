@@ -16,7 +16,7 @@ public class FOV : MonoBehaviour {
 	}
 	// Update is called once per frame
 	void Update () {
-		if (Input.GetKey ("space") && MoveForward.speed >= 50 ) {
+		if (Input.GetKey ("space") && ProgressBar.percent >= 100 ) {
 			warp = true;
 		}
 		if (warp == true) {
