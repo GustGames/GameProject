@@ -27,6 +27,12 @@ public class ProgressBar : MonoBehaviour {
 			percent = 100;
 			Txtprogress.text = string.Format ("{0} %", percent);
 		}
+		float heightRel= height /(Screen.height);
+		
+		Vector2 wall = this.transform.position;
+		wall.y = Mathf.Clamp(wall.y, Screen.height-100, Screen.height);
+		wall.x = Mathf.Clamp(wall.x, Screen.width-100, Screen.width);
+		this.transform.position = wall;
 
 
 	}
