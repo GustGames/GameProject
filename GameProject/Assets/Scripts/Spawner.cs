@@ -2,6 +2,9 @@
 using System.Collections;
 public class Spawner : MonoBehaviour {
 
+	public float speedRingSpawnRate = 2;
+	public float asteroidSpawnRate = 1;
+
 	public GameObject SpeedRing;
 	public GameObject Astroid;
 	public GameObject PlayerShip;
