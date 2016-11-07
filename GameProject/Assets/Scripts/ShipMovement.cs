@@ -20,7 +20,7 @@ public class ShipMovement : MonoBehaviour
 		Vector3 finalDirection = new Vector3(horizontal,vertical,5.0f);
 		transform.position += direction*movementSpeed*Time.deltaTime;
 		transform.rotation = Quaternion.RotateTowards(transform.rotation,Quaternion.LookRotation
-		                                              (finalDirection),Mathf.Deg2Rad*50.0f);
+		                                              (finalDirection),Mathf.Deg2Rad*300.0f);
 
 		float widthRel = width / (Screen.width);
 		float heightRel= height /(Screen.height); 
@@ -30,8 +30,8 @@ public class ShipMovement : MonoBehaviour
 		viewPos.y = Mathf.Clamp(viewPos.y, heightRel, 1-heightRel);
 		this.transform.position = Camera.main.ViewportToWorldPoint (viewPos);
 
-		if (movementSpeed < 5) {
-			movementSpeed = 5;
+		if (movementSpeed < 7) {
+			movementSpeed = 7;
 		}
 
 	}

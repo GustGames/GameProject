@@ -11,6 +11,7 @@ GameObject:
   - 33: {fileID: 3384050}
   - 65: {fileID: 6502586}
   - 23: {fileID: 2318450}
+  - 114: {fileID: 11464716}
   m_Layer: 5
   m_Name: Pillar
   m_TagString: Untagged
@@ -26,7 +27,7 @@ Transform:
   m_GameObject: {fileID: 121102}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: -22, z: 0}
-  m_LocalScale: {x: 15, y: 200, z: 1.32862616}
+  m_LocalScale: {x: 15, y: 10, z: 1.32862616}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -73,6 +74,17 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &11464716
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 121102}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c0d28845d65f77f4cbd5388e46e39712, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1
@@ -86,7 +98,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: m_LocalScale.y
-      value: 200
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: m_Materials.Array.data[0]
