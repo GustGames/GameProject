@@ -39,7 +39,7 @@ public class Spawner : MonoBehaviour {
 			GameObject PillarClone = Instantiate (Pillar, new Vector3 (Random.Range (MovingLevel.transform.position.x -5,MovingLevel.transform.position.x+5), Random.Range (MovingLevel.transform.position.y+5, MovingLevel.transform.position.y+5), Random.Range(PlayerShip.transform.position.z + 400, PlayerShip.transform.position.z + 500)), Quaternion.Euler(0.0f, 0.0f, Random.Range(0.0f, 360.0f))) as GameObject;
 			PillarClone.transform.parent = GameObject.Find("MovingLevel").transform;
 		}else if (Application.loadedLevelName == "Level2"){
-			GameObject PillarClone = Instantiate (Pillar, new Vector3 (Random.Range (-8, 8), Random.Range (-5, 5), Random.Range (PlayerShip.transform.position.z + 250, PlayerShip.transform.position.y + 5)), Quaternion.Euler (-90, 0, 0)) as GameObject;
+			GameObject PillarClone = Instantiate (Pillar, new Vector3 (Random.Range (-8, 8), Random.Range (-5, 5), (PlayerShip.transform.position.z + 250)), Quaternion.Euler (-90, 0, 0)) as GameObject;
 			Debug.Log("Fuck game DEV");
 		}
 		
