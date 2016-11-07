@@ -1,16 +1,21 @@
 fileFormatVersion: 2
-guid: 6186ffb2c1df8a449aa7f0e295323d25
-timeCreated: 1477495512
+guid: 8da40b5d72936f845897aa7e79b6e41d
+timeCreated: 1478361979
 licenseType: Free
 ModelImporter:
   serializedVersion: 18
   fileIDToRecycleName:
-    100000: //RootNode
-    400000: //RootNode
-    2300000: //RootNode
-    3300000: //RootNode
+    100000: Camera
+    100002: Circle
+    100004: Lamp
+    100006: //RootNode
+    400000: Camera
+    400002: Circle
+    400004: Lamp
+    400006: //RootNode
+    2300000: Circle
+    3300000: Circle
     4300000: Circle
-    7400000: Default Take
     9500000: //RootNode
   materials:
     importMaterials: 1
