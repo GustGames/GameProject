@@ -2,6 +2,9 @@
 using System.Collections;
 public class Spawner : MonoBehaviour {
 
+	public float speedRingSpawnRate = 2;
+	public float asteroidSpawnRate = 1;
+
 	public GameObject SpeedRing;
 	public GameObject Astroid;
 	public GameObject PlayerShip;
@@ -9,8 +12,8 @@ public class Spawner : MonoBehaviour {
 
 	
 	void Start () {
-		InvokeRepeating ("SpawnSpeedRing", 5, 5);
-		InvokeRepeating ("SpawnAstroid", 1, 1);
+		InvokeRepeating ("SpawnSpeedRing", speedRingSpawnRate, speedRingSpawnRate);
+		InvokeRepeating ("SpawnAstroid", asteroidSpawnRate, asteroidSpawnRate);
 
 	}
 
@@ -19,7 +22,7 @@ public class Spawner : MonoBehaviour {
 	}
 
 	void SpawnSpeedRing(){
-		GameObject SpeedRingClone = Instantiate (SpeedRing, new Vector3 (Random.Range (-8, 8), Random.Range (-5, 5), (PlayerShip.transform.position.z + 250)), Quaternion.Euler (0, 0, 0)) as GameObject;
+		GameObject SpeedRingClone = Instantiate (SpeedRing, new Vector3 (Random.Range (-8, 8), Random.Range (-5, 5), (PlayerShip.transform.position.z + 250)), Quaternion.identity) as GameObject;
 		if (Application.loadedLevelName == "Level1") {
 			SpeedRingClone.transform.parent = GameObject.Find("MovingLevel").transform;
 		}
