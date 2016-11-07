@@ -11,8 +11,6 @@ GameObject:
   - 33: {fileID: 3383132}
   - 136: {fileID: 13685062}
   - 23: {fileID: 2323768}
-  - 114: {fileID: 11406138}
-  - 114: {fileID: 11482322}
   m_Layer: 0
   m_Name: SpeedRing
   m_TagString: Untagged
@@ -26,9 +24,9 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 125984}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -.707107067, y: 0, z: 0, w: .70710659}
   m_LocalPosition: {x: .0700000003, y: .200000003, z: 39.0400009}
-  m_LocalScale: {x: 2.5, y: 2.5, z: 2.5}
+  m_LocalScale: {x: 6.30000019, y: .191094011, z: 6.30000019}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -62,29 +60,7 @@ MeshFilter:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 125984}
-  m_Mesh: {fileID: 4300000, guid: 6186ffb2c1df8a449aa7f0e295323d25, type: 3}
---- !u!114 &11406138
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 125984}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1db518685ec32424caf143462e6c6a99, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &11482322
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 125984}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 840341816c10c694994cf00c68ee81ad, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!136 &13685062
 CapsuleCollider:
   m_ObjectHideFlags: 1
@@ -92,7 +68,7 @@ CapsuleCollider:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 125984}
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_Enabled: 1
   m_Radius: .5
   m_Height: 2
@@ -111,31 +87,19 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: m_LocalScale.x
-      value: 2.5
+      value: 6.30000019
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: m_LocalScale.z
-      value: 2.5
+      value: 6.30000019
       objectReference: {fileID: 0}
     - target: {fileID: 0}
-      propertyPath: m_IsTrigger
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 0}
-      propertyPath: m_Mesh
-      value: 
-      objectReference: {fileID: 4300000, guid: 6186ffb2c1df8a449aa7f0e295323d25, type: 3}
-    - target: {fileID: 0}
-      propertyPath: m_LocalScale.y
-      value: 2.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 0}
-      propertyPath: m_LocalRotation.x
+      propertyPath: m_IsKinematic
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 0}
-      propertyPath: m_LocalRotation.w
-      value: 1
+      propertyPath: m_Enabled
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}

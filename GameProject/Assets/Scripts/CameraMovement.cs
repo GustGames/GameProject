@@ -8,12 +8,11 @@ public class CameraMovement : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-		//needs to start behind the player
-
+	
 	}
 	
 	// Update is called once per frame
-	void Update () {
+	void LateUpdate () {
 		Vector3 newPosition = objectToFollow.position;
 		newPosition.x *= movementRatio.x;
 		newPosition.y *= movementRatio.y;
