@@ -12,27 +12,22 @@ public class BasicAI : MonoBehaviour {
 	void MoveToRing(){
 		transform.LookAt (GameObject.Find("SpeedRing(Clone)").transform.position);
 		transform.position += transform.forward*speed*Time.deltaTime;
-		Debug.Log ("Fuck Game dev");
 		//transform.Rotate(new Vector3
 		
 		//if(Vector3.Distance(Transform.position, speedRingTrans.position))
 	}
 
-	void moveToNextRing(){
+	void OnTriggerEnter(Collider other){
+		Debug.Log ("Entered Next Function");
+		if(other.gameObject.name == "SpeedRing(Clone)"){
+			Debug.Log("Hit ring");
+		}
 
-	}
-
-	//public GameObject Enemy;
-	//BasicEnemy basicenemy;
-	// Use this for initialization
-	void Start () {
-
-		//speedRing = GameObject.FindGameObjectsWithTag ("SpeedRing");
-		//basicenemy = Enemy.GetComponent <BasicEnemy> ();
 	}
 	
 	// Update is called once per frame
 	void Update () {
 		MoveToRing ();
+		//moveToNextRing ();
 	}
 }
