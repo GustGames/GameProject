@@ -1883,7 +1883,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 428386, guid: c559aa3a34b022a4c90829de90aeef51, type: 2}
       propertyPath: m_LocalScale.y
-      value: .899999976
+      value: 1.79999995
       objectReference: {fileID: 0}
     - target: {fileID: 13637736, guid: c559aa3a34b022a4c90829de90aeef51, type: 2}
       propertyPath: m_Radius
@@ -6413,7 +6413,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 428386, guid: c559aa3a34b022a4c90829de90aeef51, type: 2}
       propertyPath: m_LocalScale.y
-      value: .800000012
+      value: 1.79999995
       objectReference: {fileID: 0}
     - target: {fileID: 13637736, guid: c559aa3a34b022a4c90829de90aeef51, type: 2}
       propertyPath: m_Radius
@@ -7559,7 +7559,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 428386, guid: c559aa3a34b022a4c90829de90aeef51, type: 2}
       propertyPath: m_LocalScale.y
-      value: .699999988
+      value: 1.79999995
       objectReference: {fileID: 0}
     - target: {fileID: 13637736, guid: c559aa3a34b022a4c90829de90aeef51, type: 2}
       propertyPath: m_Radius
@@ -8206,7 +8206,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 428386, guid: c559aa3a34b022a4c90829de90aeef51, type: 2}
       propertyPath: m_RootOrder
-      value: 4
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 2394152, guid: c559aa3a34b022a4c90829de90aeef51, type: 2}
       propertyPath: m_Materials.Array.data[0]
@@ -8226,7 +8226,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 428386, guid: c559aa3a34b022a4c90829de90aeef51, type: 2}
       propertyPath: m_LocalScale.y
-      value: 10000
+      value: 30000
       objectReference: {fileID: 0}
     - target: {fileID: 13637736, guid: c559aa3a34b022a4c90829de90aeef51, type: 2}
       propertyPath: m_Radius
@@ -8865,7 +8865,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 430014, guid: a6e333339d2ae72488bc8db869c577c7, type: 2}
       propertyPath: m_RootOrder
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 11450316, guid: a6e333339d2ae72488bc8db869c577c7, type: 2}
       propertyPath: PlayerShip
