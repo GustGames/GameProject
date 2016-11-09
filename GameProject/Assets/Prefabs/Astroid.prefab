@@ -12,6 +12,7 @@ GameObject:
   - 135: {fileID: 13561510}
   - 23: {fileID: 2314234}
   - 114: {fileID: 11489220}
+  - 54: {fileID: 5442478}
   m_Layer: 0
   m_Name: Astroid
   m_TagString: Untagged
@@ -64,7 +65,7 @@ MeshFilter:
   m_Mesh: {fileID: 4300000, guid: 4769cc57c0d90474f830018b50bb2f78, type: 3}
 --- !u!54 &5442478
 Rigidbody:
-  m_ObjectHideFlags: 1
+  m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 194520}

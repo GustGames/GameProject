@@ -20,7 +20,8 @@ public class BasicAI : MonoBehaviour {
 	void OnTriggerEnter(Collider other){
 		Debug.Log ("Entered Next Function");
 		if(other.gameObject.name == "SpeedRing(Clone)"){
-			Debug.Log("Hit ring");
+			transform.position += transform.forward *speed* Time.deltaTime;
+			Debug.Log("Got it");
 		}
 
 	}
