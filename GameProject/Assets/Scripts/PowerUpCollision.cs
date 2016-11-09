@@ -11,6 +11,11 @@ public class PowerUpCollision : MonoBehaviour {
 			Destroy (other.gameObject);
 
 		}
+		else if (other.gameObject.name == "SpeedRing(Clone)") {
+			Destroy (other.gameObject);
+			
+		}
+
 	}
 	
 	
