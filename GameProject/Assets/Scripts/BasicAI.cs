@@ -2,19 +2,14 @@
 using System.Collections;
 
 public class BasicAI : MonoBehaviour {
-	//Transform speedRingTrans = ;
 	public GameObject player;
-	//public GameObject speedRing;
-
-
 	public float speed = 20f;
+
+	public Transform target;
 	
 	void MoveToRing(){
 		transform.LookAt (GameObject.Find("SpeedRing(Clone)").transform.position);
 		transform.position += transform.forward*speed*Time.deltaTime;
-		//transform.Rotate(new Vector3
-		
-		//if(Vector3.Distance(Transform.position, speedRingTrans.position))
 	}
 
 	void OnTriggerEnter(Collider other){
@@ -25,10 +20,24 @@ public class BasicAI : MonoBehaviour {
 		}
 
 	}
+
+	void calcuateVec(){
+		/**
+		 * getting the vector between two points
+		 * in this case speed ring and AI
+		 **/
+
+		Vector3 targetDir = target.position - transform.position;
+		float angel = Vector3.Angle (targetDir, transform.forward);
+
+		if (angel > 50.0f) {
+			print ("close");
+		}
+	}
 	
 	// Update is called once per frame
 	void Update () {
 		MoveToRing ();
-		//moveToNextRing ();
+		calcuateVec ();
 	}
 }
