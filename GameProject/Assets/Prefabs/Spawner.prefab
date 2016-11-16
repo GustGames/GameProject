@@ -40,14 +40,33 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SpeedRing: {fileID: 125984, guid: e5935304a6400a74e98836b4026a99d9, type: 2}
-  PlayerShip: {fileID: 0}
+  Astroid: {fileID: 194520, guid: eae4b4f5490b4e4418039d1747f5016c, type: 2}
+  PlayerShip: {fileID: 152560, guid: 87965b40202433d4abe3a2d0745cd6cf, type: 2}
+  MovingLevel: {fileID: 170800, guid: c559aa3a34b022a4c90829de90aeef51, type: 2}
+  Pillar: {fileID: 121102, guid: 5f06825f1009f4341aff273f4600b1f1, type: 2}
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1
   serializedVersion: 2
   m_Modification:
     m_TransformParent: {fileID: 0}
-    m_Modifications: []
+    m_Modifications:
+    - target: {fileID: 0}
+      propertyPath: Astroid
+      value: 
+      objectReference: {fileID: 194520, guid: eae4b4f5490b4e4418039d1747f5016c, type: 2}
+    - target: {fileID: 0}
+      propertyPath: PlayerShip
+      value: 
+      objectReference: {fileID: 152560, guid: 87965b40202433d4abe3a2d0745cd6cf, type: 2}
+    - target: {fileID: 0}
+      propertyPath: MovingLevel
+      value: 
+      objectReference: {fileID: 170800, guid: c559aa3a34b022a4c90829de90aeef51, type: 2}
+    - target: {fileID: 0}
+      propertyPath: Pillar
+      value: 
+      objectReference: {fileID: 121102, guid: 5f06825f1009f4341aff273f4600b1f1, type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 142744}
