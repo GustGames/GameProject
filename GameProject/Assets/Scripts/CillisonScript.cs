@@ -5,7 +5,9 @@ public class CillisonScript : MonoBehaviour {
 	public int height;
 	public GameObject Ship;
 	public Texture2D textureImage;
-	public bool Feedback = false;
+	public Texture2D textureImage1;
+	public bool FeedbackGreen = false;
+	public bool FeedbackRed = false;
 	void OnTriggerEnter(Collider other){
 		//Destroy (other.gameObject);
 		if (other.gameObject.name == "Astroid(Clone)") {
@@ -13,17 +15,21 @@ public class CillisonScript : MonoBehaviour {
 			Debug.Log ("SPEED DOWN");
 			FOV.SpeedDown ();
 			MoveForward.SpeedAstroidDown ();
-
+			FeedbackRed = true;
+			StartCoroutine(Example());
 		} else if (other.gameObject.name == "SpeedRing(Clone)") {
 			Destroy (other.gameObject);
 			Debug.Log ("SPEED BOOST");
 			FOV.SpeedBoost ();
 			MoveForward.SpeedRingBoost ();
-			Feedback = true;
+			FeedbackGreen = true;
+			StartCoroutine(Example());
 		} else if (other.gameObject.name == "MovingLevel") {
 
 		} else if (other.gameObject.name == "Pillar(Clone)") {
 			MoveForward.SpeedAstroidDown ();
+			FeedbackRed = true;
+			StartCoroutine(Example());
 		}
 		else {
 			Debug.Log ("No Collision");
@@ -31,11 +37,23 @@ public class CillisonScript : MonoBehaviour {
 
 
 	}
+	IEnumerator Example() {
+
+		yield return new WaitForSeconds (0.15f);
+		if (FeedbackGreen == true) {
+			FeedbackGreen = false;
+		}
+		else if (FeedbackRed == true) {
+			FeedbackRed = false;
+		}
+	}
 
 	void OnGUI(){
-		if (Feedback == true) {
+		if (FeedbackGreen == true) {
 			GUI.DrawTexture (new Rect (0, 0, Screen.width, Screen.height), textureImage);
-
+		} 
+		else if (FeedbackRed == true) {
+			GUI.DrawTexture (new Rect (0, 0, Screen.width, Screen.height), textureImage1);
 		}
 	}
 
