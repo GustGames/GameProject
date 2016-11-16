@@ -3,16 +3,14 @@ using System.Collections;
 
 public class Asteroid : MonoBehaviour {
 
-	int timeToDestroy = 10;
-
 	// Use this for initialization
 	void Start () {
-		Destroy (gameObject, timeToDestroy);
 	
 	}
 	
 	// Update is called once per frame
-	void Update () {
-	
+	void Update () 
+	{
+		transform.Rotate(0, Time.deltaTime, 0, Space.Self);
 	}
 }
