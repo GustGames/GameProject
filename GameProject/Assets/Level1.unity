@@ -675,6 +675,14 @@ Prefab:
       propertyPath: Blast
       value: 
       objectReference: {fileID: 109072, guid: 7b0ae091f46c25a4c88d6a31da03e6a5, type: 2}
+    - target: {fileID: 11421614, guid: efa2d744681d1e54693ee4dfe07d509d, type: 2}
+      propertyPath: Amount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 11421614, guid: efa2d744681d1e54693ee4dfe07d509d, type: 2}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: efa2d744681d1e54693ee4dfe07d509d, type: 2}
   m_IsPrefabParent: 0
@@ -881,6 +889,7 @@ GameObject:
   - 54: {fileID: 172461368}
   - 136: {fileID: 172461369}
   - 114: {fileID: 172461367}
+  - 114: {fileID: 172461370}
   m_Layer: 0
   m_Name: Ship
   m_TagString: Untagged
@@ -931,6 +940,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   height: 0
   Ship: {fileID: 100000, guid: d3b74fbd5caff6e4aa4f8fb5b2485442, type: 3}
+  textureImage: {fileID: 2800000, guid: c776dd030a76ad842be40e9271efadf3, type: 3}
 --- !u!54 &172461368
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -961,6 +971,18 @@ CapsuleCollider:
   m_Height: 1
   m_Direction: 1
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &172461370
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 172461364}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f9533e9f78def0b4cb2d6960b0831cea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  textureImage: {fileID: 2800000, guid: c776dd030a76ad842be40e9271efadf3, type: 3}
 --- !u!1 &213623506
 GameObject:
   m_ObjectHideFlags: 0
@@ -3702,7 +3724,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 2
 --- !u!1 &840493876
 GameObject:
   m_ObjectHideFlags: 0
@@ -6172,7 +6194,7 @@ RectTransform:
   - {fileID: 99593923}
   - {fileID: 240319003}
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 1
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
@@ -6904,7 +6926,7 @@ Light:
   serializedVersion: 6
   m_Type: 1
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Intensity: 1
+  m_Intensity: 1.50999999
   m_Range: 10
   m_SpotAngle: 30
   m_CookieSize: 10
@@ -6937,14 +6959,14 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 3
 --- !u!114 &1625753399
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1625753396}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 10bf467fd2cd7a044bcd2ddf562ca8b8, type: 3}
   m_Name: 
@@ -7529,7 +7551,7 @@ GameObject:
   - 23: {fileID: 1743888856}
   - 114: {fileID: 1743888860}
   m_Layer: 0
-  m_Name: Cube
+  m_Name: SkyBox
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -8306,7 +8328,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 428386, guid: c559aa3a34b022a4c90829de90aeef51, type: 2}
       propertyPath: m_RootOrder
-      value: 3
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 2394152, guid: c559aa3a34b022a4c90829de90aeef51, type: 2}
       propertyPath: m_Materials.Array.data[0]
@@ -8965,7 +8987,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 430014, guid: a6e333339d2ae72488bc8db869c577c7, type: 2}
       propertyPath: m_RootOrder
-      value: 1
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 11450316, guid: a6e333339d2ae72488bc8db869c577c7, type: 2}
       propertyPath: PlayerShip
@@ -8991,6 +9013,14 @@ Prefab:
       propertyPath: Pillar
       value: 
       objectReference: {fileID: 121102, guid: 5f06825f1009f4341aff273f4600b1f1, type: 2}
+    - target: {fileID: 11450316, guid: a6e333339d2ae72488bc8db869c577c7, type: 2}
+      propertyPath: FeedBack
+      value: 
+      objectReference: {fileID: 190196, guid: 40278d6499b95f74b93b5409d00e1d43, type: 2}
+    - target: {fileID: 11450316, guid: a6e333339d2ae72488bc8db869c577c7, type: 2}
+      propertyPath: Red
+      value: 
+      objectReference: {fileID: 2800000, guid: a8706594734d5504e8b9bcc43abb4ea0, type: 3}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: a6e333339d2ae72488bc8db869c577c7, type: 2}
   m_IsPrefabParent: 0

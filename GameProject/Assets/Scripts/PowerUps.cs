@@ -29,29 +29,29 @@ public class PowerUps : MonoBehaviour {
 	}
 	void Shield (){
 		
-		if (percent > 0 && Input.GetKey("space")) {
+		if (percent > 0 && Input.GetKey ("space")) {
 			
 			percent -= 1;
-			speed  -= 1;
+			speed -= 1;
 			//background.fillAmount = amount;
 			//Txtprogress.text = string.Format ("{0} %", percent);
-			if ( create == false) {
-				GameObject BlastClone = Instantiate (Blast, new Vector3 (Ship.transform.position.x,Ship.transform.position.y,Ship.transform.position.z+1), Quaternion.Euler (0, 0, 0)) as GameObject;
-				BlastClone.transform.parent = GameObject.Find("Ship").transform;
+			if (create == false) {
+				GameObject BlastClone = Instantiate (Blast, new Vector3 (Ship.transform.position.x, Ship.transform.position.y, Ship.transform.position.z + 1), Quaternion.Euler (0, 0, 0)) as GameObject;
+				BlastClone.transform.parent = GameObject.Find ("Ship").transform;
 				create = true;
 			}
+			if (GameObject.Find ("Blast(Clone)").transform.localScale.y < 7) {
+				GameObject.Find ("Blast(Clone)").transform.localScale += new Vector3 (0.4f, 0.4f, 0.4f);
+			}
 			
-			
-		}
-		if (percent == 0 || !Input.GetKey("space"))
-		{
-			Destroy (GameObject.Find("Blast(Clone)"));
+		} else if (percent == 0 || !Input.GetKey ("space")) {
+			Destroy (GameObject.Find ("Blast(Clone)"));
 			create = false;
+		} else {
+			Debug.Log("done");
 		}
-		if (GameObject.Find("Blast(Clone)").transform.localScale.y < 7) {
-			GameObject.Find("Blast(Clone)").transform.localScale += new Vector3 (0.4f, 0.4f, 0.4f);
-			
-		}
+		 
+
 
 	}
 	void FillBar()

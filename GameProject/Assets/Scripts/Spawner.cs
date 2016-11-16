@@ -7,6 +7,8 @@ public class Spawner : MonoBehaviour {
 	public GameObject PlayerShip;
 	public GameObject MovingLevel;
 	public GameObject Pillar;
+	public GameObject FeedBack;
+	public Texture2D Red;
 
 	
 	void Start () {
@@ -15,6 +17,7 @@ public class Spawner : MonoBehaviour {
 		InvokeRepeating ("SpawnAstroid", 1, 0.3f);
 		InvokeRepeating ("SpawnAstroid", 1, 0.6f);
 		InvokeRepeating ("SpawnPillar", 1, 2);
+		//Invoke ("SpawnFeedBack", 2);
 	}
 
 
@@ -43,7 +46,19 @@ public class Spawner : MonoBehaviour {
 
 
 	}
+	void SpawnFeedBack()
+	{
 
+		//GameObject FeedBackClone = Instantiate (FeedBack) as GameObject;
+		//float width = Screen.width;
+		//float height = Screen.height;
+		//GameObject FeedBackClone = Instantiate (FeedBack, new Vector2(width,height), Quaternion.Euler (0, 0, 0))  as GameObject;
+		//GUI.DrawTexture(new Rect(0,0,Screen.width,Screen.height), Red); 
+		//FeedBackClone.transform.parent = GameObject.Find ("Canvas").transform;
+
+		
+
+	}
 	/**void SpawnSpeedRing()
 	{
 		float xa = Random.Range (MovingLevel.transform.position.x+10, MovingLevel.transform.position.x + 30);
