@@ -941,6 +941,9 @@ MonoBehaviour:
   height: 0
   Ship: {fileID: 100000, guid: d3b74fbd5caff6e4aa4f8fb5b2485442, type: 3}
   textureImage: {fileID: 2800000, guid: c776dd030a76ad842be40e9271efadf3, type: 3}
+  textureImage1: {fileID: 2800000, guid: 10877b3b8a92b734cb4d69a74a09f4dd, type: 3}
+  FeedbackGreen: 0
+  FeedbackRed: 0
 --- !u!54 &172461368
 Rigidbody:
   m_ObjectHideFlags: 0
