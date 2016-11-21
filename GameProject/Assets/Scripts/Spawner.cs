@@ -7,8 +7,7 @@ public class Spawner : MonoBehaviour {
 	public GameObject PlayerShip;
 	public GameObject MovingLevel;
 	public GameObject Pillar;
-	public GameObject FeedBack;
-	public Texture2D Red;
+
 
 	
 	void Start () {
@@ -46,8 +45,8 @@ public class Spawner : MonoBehaviour {
 
 
 	}
-	void SpawnFeedBack()
-	{
+	//void SpawnFeedBack()
+	//{
 
 		//GameObject FeedBackClone = Instantiate (FeedBack) as GameObject;
 		//float width = Screen.width;
@@ -58,7 +57,7 @@ public class Spawner : MonoBehaviour {
 
 		
 
-	}
+	//}
 	/**void SpawnSpeedRing()
 	{
 		float xa = Random.Range (MovingLevel.transform.position.x+10, MovingLevel.transform.position.x + 30);

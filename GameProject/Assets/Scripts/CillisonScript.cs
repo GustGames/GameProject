@@ -16,20 +16,20 @@ public class CillisonScript : MonoBehaviour {
 			FOV.SpeedDown ();
 			MoveForward.SpeedAstroidDown ();
 			FeedbackRed = true;
-			StartCoroutine(Example());
+			StartCoroutine(Red());
 		} else if (other.gameObject.name == "SpeedRing(Clone)") {
 			Destroy (other.gameObject);
 			Debug.Log ("SPEED BOOST");
 			FOV.SpeedBoost ();
 			MoveForward.SpeedRingBoost ();
 			FeedbackGreen = true;
-			StartCoroutine(Example());
+			StartCoroutine(Green());
 		} else if (other.gameObject.name == "MovingLevel") {
 
 		} else if (other.gameObject.name == "Pillar(Clone)") {
 			MoveForward.SpeedAstroidDown ();
 			FeedbackRed = true;
-			StartCoroutine(Example());
+			StartCoroutine(Red());
 		}
 		else {
 			Debug.Log ("No Collision");
@@ -37,16 +37,21 @@ public class CillisonScript : MonoBehaviour {
 
 
 	}
-	IEnumerator Example() {
+	IEnumerator Green() {
 
 		yield return new WaitForSeconds (0.15f);
 		if (FeedbackGreen == true) {
 			FeedbackGreen = false;
 		}
-		else if (FeedbackRed == true) {
+	}
+	IEnumerator Red() {
+		
+		yield return new WaitForSeconds (0.15f);
+		 if (FeedbackRed == true) {
 			FeedbackRed = false;
 		}
 	}
+
 
 	void OnGUI(){
 		if (FeedbackGreen == true) {

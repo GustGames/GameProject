@@ -47,9 +47,9 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\Materials\New Text Document.cs" />
-     <Compile Include="Assets\Scripts\Asteroid.cs" />
      <Compile Include="Assets\Scripts\CameraMovement.cs" />
      <Compile Include="Assets\Scripts\CillisonScript.cs" />
+     <Compile Include="Assets\Scripts\DeleteScript.cs" />
      <Compile Include="Assets\Scripts\FOV.cs" />
      <Compile Include="Assets\Scripts\FeedBackScript.cs" />
      <Compile Include="Assets\Scripts\LightingScript.cs" />
