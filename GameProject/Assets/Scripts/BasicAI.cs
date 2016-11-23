@@ -8,31 +8,23 @@ public class BasicAI : MonoBehaviour {
 	public Transform target;
 	
 	void MoveToRing(){
-		//transform.LookAt (GameObject.Find("SpeedRing(Clone)").transform.position);
-		//transform.position += transform.forward*speed*Time.deltaTime;
+		transform.LookAt (GameObject.Find("SpeedRing(Clone)").transform.position);
+		transform.position += transform.forward*speed*Time.deltaTime;
 
 		Vector3 targetDir = target.position - transform.position;
 		float angel = Vector3.Angle (targetDir, transform.forward);
-		
+
+
+		/*
+		 * this prints out on how far away from the target you are
+		 */
+
 		if (angel > 90.0f) {
-			transform.LookAt (GameObject.Find ("SpeedRing(Clone)").transform.position);
-			transform.position += transform.forward * speed * Time.deltaTime;
-			print ("close");
+			print ("within");
 		} else {
-			print("not in view");
+			print("outside");
 		}
 	}
-
-	/**
-	void OnTriggerEnter(Collider other){
-		Debug.Log ("Entered Next Function");
-		if(other.gameObject.name == "SpeedRing(Clone)"){
-			transform.position += transform.forward *speed* Time.deltaTime;
-			Debug.Log("Got it");
-		}
-
-	}
-	**/
 
 	void calcuateVec(){
 		/**
@@ -42,8 +34,10 @@ public class BasicAI : MonoBehaviour {
 	}
 	
 	// Update is called once per frame
-	void Update () {
+	void Update (){
 		MoveToRing ();
+		Debug.DrawLine(transform.position, GameObject.Find("SpeedRing(Clone)").transform.position, Color.red);
+		Debug.DrawLine (transform.forward, player.transform.position, Color.green);
 		//calcuateVec ();
 	}
 }
