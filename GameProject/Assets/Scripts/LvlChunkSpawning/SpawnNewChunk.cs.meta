@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 0037e895d28d6e44999fe6ee81147fbe
+timeCreated: 1479915680
+licenseType: Free
+MonoImporter:
+  serializedVersion: 2
+  defaultReferences:
+  - archChunk: {fileID: 131900, guid: 65e11bc999a99ba4a8fa2b16fc05a8a0, type: 2}
+  - tunnelChunk: {fileID: 196262, guid: 181461c0123d42f4497483527e73a506, type: 2}
+  - blankFloorChunk: {fileID: 187390, guid: 1844f99d58c02a24cb362e8d9acd1655, type: 2}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

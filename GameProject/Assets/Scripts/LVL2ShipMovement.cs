@@ -9,7 +9,7 @@ public class LVL2ShipMovement : MonoBehaviour
 	public GameObject MovingLevel;
 	void Start ()
 	{
-		movementSpeed = 5.0f;
+		movementSpeed = 8.0f;
 	}
 
 	// Update is called once per frame

@@ -55,6 +55,7 @@
      <Compile Include="Assets\Scripts\LVL2ShipMovement.cs" />
      <Compile Include="Assets\Scripts\LevelChunkSpawner.cs" />
      <Compile Include="Assets\Scripts\LightingScript.cs" />
+     <Compile Include="Assets\Scripts\LvlChunkSpawning\SpawnNewChunk.cs" />
      <Compile Include="Assets\Scripts\MoveForward.cs" />
      <Compile Include="Assets\Scripts\MovingLevel.cs" />
      <Compile Include="Assets\Scripts\PillarScript.cs" />
@@ -63,7 +64,6 @@
      <Compile Include="Assets\Scripts\ProgressBar.cs" />
      <Compile Include="Assets\Scripts\ShipMovement.cs" />
      <Compile Include="Assets\Scripts\SkyBoxScript.cs" />
-     <Compile Include="Assets\Scripts\SpawnNewChunk.cs" />
      <Compile Include="Assets\Scripts\Spawner.cs" />
      <Compile Include="Assets\Scripts\SpeedRing.cs" />
      <Compile Include="Assets\Scripts\Warp.cs" />
