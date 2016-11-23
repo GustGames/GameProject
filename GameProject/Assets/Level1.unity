@@ -625,11 +625,11 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 22430438, guid: efa2d744681d1e54693ee4dfe07d509d, type: 2}
       propertyPath: m_AnchoredPosition.x
-      value: -58
+      value: 69
       objectReference: {fileID: 0}
     - target: {fileID: 22430438, guid: efa2d744681d1e54693ee4dfe07d509d, type: 2}
       propertyPath: m_AnchoredPosition.y
-      value: -130
+      value: -187
       objectReference: {fileID: 0}
     - target: {fileID: 22430438, guid: efa2d744681d1e54693ee4dfe07d509d, type: 2}
       propertyPath: m_SizeDelta.x
@@ -940,7 +940,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   height: 0
   Ship: {fileID: 100000, guid: d3b74fbd5caff6e4aa4f8fb5b2485442, type: 3}
-  textureImage: {fileID: 2800000, guid: c776dd030a76ad842be40e9271efadf3, type: 3}
+  textureImage: {fileID: 2800000, guid: cc543409e0101204b85cfbb570166ff2, type: 3}
+  Feedback: 1
 --- !u!54 &172461368
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -2786,11 +2787,11 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 22414950, guid: 51485aa410d1247438117fffd97393f9, type: 2}
       propertyPath: m_AnchoredPosition.x
-      value: 79
+      value: -51
       objectReference: {fileID: 0}
     - target: {fileID: 22414950, guid: 51485aa410d1247438117fffd97393f9, type: 2}
       propertyPath: m_AnchoredPosition.y
-      value: -130
+      value: -187
       objectReference: {fileID: 0}
     - target: {fileID: 22414950, guid: 51485aa410d1247438117fffd97393f9, type: 2}
       propertyPath: m_SizeDelta.x

@@ -25,8 +25,8 @@ public class Spawner : MonoBehaviour {
 
 	void SpawnSpeedRing()
 	{
-		GameObject SpeedRingClone1 = Instantiate (SpeedRing, new Vector3 (Random.Range (MovingLevel.transform.position.x+5,MovingLevel.transform.position.x+30), Random.Range (MovingLevel.transform.position.y+5, MovingLevel.transform.position.y+15), Random.Range(PlayerShip.transform.position.z + 250, PlayerShip.transform.position.z + 500)), Quaternion.Euler (0, 0, 0)) as GameObject;
-		GameObject SpeedRingClone2 = Instantiate (SpeedRing, new Vector3 (Random.Range (MovingLevel.transform.position.x-5,MovingLevel.transform.position.x-30), Random.Range (MovingLevel.transform.position.y-5, MovingLevel.transform.position.y-15), Random.Range(PlayerShip.transform.position.z + 250, PlayerShip.transform.position.z + 500)), Quaternion.Euler (0, 0, 0)) as GameObject;
+		GameObject SpeedRingClone1 = Instantiate (SpeedRing, new Vector3 (Random.Range (MovingLevel.transform.position.x+5,MovingLevel.transform.position.x+30), Random.Range (MovingLevel.transform.position.y+5, MovingLevel.transform.position.y+15), Random.Range(PlayerShip.transform.position.z + 250, PlayerShip.transform.position.z + 500)), Quaternion.Euler (0, 180, 0)) as GameObject;
+		GameObject SpeedRingClone2 = Instantiate (SpeedRing, new Vector3 (Random.Range (MovingLevel.transform.position.x-5,MovingLevel.transform.position.x-30), Random.Range (MovingLevel.transform.position.y-5, MovingLevel.transform.position.y-15), Random.Range(PlayerShip.transform.position.z + 250, PlayerShip.transform.position.z + 500)), Quaternion.Euler (0, 180, 0)) as GameObject;
 		SpeedRingClone1.transform.parent = GameObject.Find("MovingLevel").transform;
 		SpeedRingClone2.transform.parent = GameObject.Find("MovingLevel").transform;
 	}
