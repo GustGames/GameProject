@@ -47,7 +47,7 @@ public class PowerUps : MonoBehaviour {
 				GameObject.Find ("Blast(Clone)").transform.localScale += new Vector3 (0.4f, 0.4f, 0.4f);
 			}
 			
-		} else if (percent == 0 || !Input.GetKey ("space")) {
+		} else if (percent == 0 || !Input.GetKey ("q")) {
 			Destroy (GameObject.Find ("Blast(Clone)"));
 			create = false;
 		} else {
@@ -87,7 +87,7 @@ public class PowerUps : MonoBehaviour {
 		amount = (speed / 100.0f);
 		percent = (int)speed/1;
 		
-		if (percent < 100 && !Input.GetKey("space")) {
+		if (percent < 100 && !Input.GetKey("q")) {
 
 			speed += 0.4f;
 			//background.fillAmount = amount;

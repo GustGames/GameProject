@@ -892,8 +892,6 @@ GameObject:
   - 114: {fileID: 172461366}
   - 54: {fileID: 172461368}
   - 136: {fileID: 172461369}
-  - 114: {fileID: 172461367}
-  - 114: {fileID: 172461370}
   m_Layer: 0
   m_Name: Ship
   m_TagString: Untagged
@@ -930,24 +928,6 @@ MonoBehaviour:
   width: 0
   height: 0
   MovingLevel: {fileID: 170800, guid: c559aa3a34b022a4c90829de90aeef51, type: 2}
---- !u!114 &172461367
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 11416458, guid: a61f624bb9dfd67419d9f594d3fef3bd,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 172461364}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a7f1d96973e988e44a63477b307da23d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  height: 0
-  Ship: {fileID: 100000, guid: d3b74fbd5caff6e4aa4f8fb5b2485442, type: 3}
-  textureImage: {fileID: 2800000, guid: cbec04b3a09988a42b81c0db04a03a72, type: 3}
-  textureImage1: {fileID: 2800000, guid: 3ef9042a2670d7e489431a283f045ba8, type: 3}
-  FeedbackGreen: 0
-  FeedbackRed: 0
 --- !u!54 &172461368
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -978,18 +958,6 @@ CapsuleCollider:
   m_Height: 1
   m_Direction: 1
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &172461370
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 172461364}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f9533e9f78def0b4cb2d6960b0831cea, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  textureImage: {fileID: 2800000, guid: c776dd030a76ad842be40e9271efadf3, type: 3}
 --- !u!1 &213623506
 GameObject:
   m_ObjectHideFlags: 0
