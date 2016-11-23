@@ -11,7 +11,7 @@ GameObject:
   - 33: {fileID: 3350118}
   - 135: {fileID: 13561510}
   - 23: {fileID: 2314234}
-  - 114: {fileID: 11489220}
+  - 114: {fileID: 11438022}
   m_Layer: 0
   m_Name: Astroid
   m_TagString: Untagged
@@ -62,7 +62,7 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 194520}
   m_Mesh: {fileID: 4300000, guid: b38f363f145339248868b542f1b8a4da, type: 3}
---- !u!114 &11489220
+--- !u!114 &11438022
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -70,7 +70,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 194520}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cc48b1cc94c58b744ae0ca3d4751bcce, type: 3}
+  m_Script: {fileID: 11500000, guid: ca8129f1a132700488e5a821ea5e9e8d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!135 &13561510
