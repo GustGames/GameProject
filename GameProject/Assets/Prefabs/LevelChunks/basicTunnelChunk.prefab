@@ -27,6 +27,7 @@ GameObject:
   - 33: {fileID: 3387266}
   - 23: {fileID: 2379792}
   - 95: {fileID: 9572250}
+  - 114: {fileID: 11440846}
   m_Layer: 0
   m_Name: FirstTunnelLevelChunk (2)
   m_TagString: Untagged
@@ -338,6 +339,19 @@ MonoBehaviour:
   archChunk: {fileID: 131900, guid: 65e11bc999a99ba4a8fa2b16fc05a8a0, type: 2}
   tunnelChunk: {fileID: 196262}
   blankFloorChunk: {fileID: 187390, guid: 1844f99d58c02a24cb362e8d9acd1655, type: 2}
+--- !u!114 &11440846
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 134456}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 71d1278cd39608e4386275c11ea50832, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  HorizontalLaser: {fileID: 178258, guid: a060835e30f9f9a429ca26eb2accf585, type: 2}
+  VerticalLaser: {fileID: 162224, guid: 48f89903a85a2f6469acb73c5cf5d278, type: 2}
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1
@@ -381,6 +395,18 @@ Prefab:
       propertyPath: blankFloorChunk
       value: 
       objectReference: {fileID: 187390, guid: 1844f99d58c02a24cb362e8d9acd1655, type: 2}
+    - target: {fileID: 0}
+      propertyPath: HorizontalLaser
+      value: 
+      objectReference: {fileID: 178258, guid: a060835e30f9f9a429ca26eb2accf585, type: 2}
+    - target: {fileID: 0}
+      propertyPath: VerticalLaser
+      value: 
+      objectReference: {fileID: 162224, guid: 48f89903a85a2f6469acb73c5cf5d278, type: 2}
+    - target: {fileID: 0}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 196262}

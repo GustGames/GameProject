@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 71d1278cd39608e4386275c11ea50832
+timeCreated: 1480352657
+licenseType: Free
+MonoImporter:
+  serializedVersion: 2
+  defaultReferences:
+  - HorizontalLaser: {fileID: 178258, guid: a060835e30f9f9a429ca26eb2accf585, type: 2}
+  - VerticalLaser: {fileID: 162224, guid: 48f89903a85a2f6469acb73c5cf5d278, type: 2}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

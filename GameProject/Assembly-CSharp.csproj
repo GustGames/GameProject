@@ -52,10 +52,12 @@
      <Compile Include="Assets\Scripts\CillisonScript.cs" />
      <Compile Include="Assets\Scripts\FOV.cs" />
      <Compile Include="Assets\Scripts\FeedBackScript.cs" />
-     <Compile Include="Assets\Scripts\LVL2ShipMovement.cs" />
      <Compile Include="Assets\Scripts\LevelChunkSpawner.cs" />
      <Compile Include="Assets\Scripts\LightingScript.cs" />
-     <Compile Include="Assets\Scripts\LvlChunkSpawning\SpawnNewChunk.cs" />
+     <Compile Include="Assets\Scripts\Lvl2SpecificScripts\LVL2ShipMovement.cs" />
+     <Compile Include="Assets\Scripts\Lvl2SpecificScripts\LVL2Spawner.cs" />
+     <Compile Include="Assets\Scripts\Lvl2SpecificScripts\SpawnNewChunk.cs" />
+     <Compile Include="Assets\Scripts\Lvl2SpecificScripts\TunnelScript.cs" />
      <Compile Include="Assets\Scripts\MoveForward.cs" />
      <Compile Include="Assets\Scripts\MovingLevel.cs" />
      <Compile Include="Assets\Scripts\PillarScript.cs" />

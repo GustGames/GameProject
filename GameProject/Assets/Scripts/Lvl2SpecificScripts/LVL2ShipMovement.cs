@@ -3,14 +3,9 @@ using System.Collections;
 
 public class LVL2ShipMovement : MonoBehaviour
 {
-	public static float movementSpeed;
+	public static float movementSpeed = 12.0f;
 	public int width;
 	public int height;
-	public GameObject MovingLevel;
-	void Start ()
-	{
-		movementSpeed = 8.0f;
-	}
 
 	// Update is called once per frame
 	void Update ()
