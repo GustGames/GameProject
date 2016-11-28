@@ -4,8 +4,8 @@ using System.Collections;
 public class FOV : MonoBehaviour {
 
 	public float fov = 90f;
-	public bool warp,startwarp,sboost = false;
-
+	public bool warp,startwarp = false;
+	public static bool sboost = false;
 	// Use this for initialization
 
 	void Start (){
@@ -36,6 +36,16 @@ public class FOV : MonoBehaviour {
 				startwarp = true;
 			}
 		}
+		if (sboost == true) {
+			Camera.main.fieldOfView = Mathf.Lerp (Camera.main.fieldOfView, 90, 2 * Time.deltaTime);
+
+		} else if (sboost == false && startwarp == true) {
+			Camera.main.fieldOfView = Mathf.Lerp (Camera.main.fieldOfView, 40, 1 * Time.deltaTime);
+			if (Camera.main.fieldOfView <= 70)
+			{
+				Camera.main.fieldOfView = 70;
+			}
+		}
 
 
 
@@ -45,8 +55,12 @@ public class FOV : MonoBehaviour {
 	void Warp(){
 		Camera.main.fieldOfView = Mathf.Lerp (Camera.main.fieldOfView, 220, 1 * Time.deltaTime);		 
 	}
+
 	public static void SpeedBoost(){
+		sboost = true;
+
 	}
 	public static void SpeedDown(){
+		sboost = false;
 	}
 }

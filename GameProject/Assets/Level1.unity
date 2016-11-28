@@ -7400,7 +7400,6 @@ MonoBehaviour:
   fov: 60
   warp: 0
   startwarp: 0
-  sboost: 0
 --- !u!81 &1738932714
 AudioListener:
   m_ObjectHideFlags: 0

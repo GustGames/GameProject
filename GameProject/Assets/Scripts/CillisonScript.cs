@@ -12,14 +12,12 @@ public class CillisonScript : MonoBehaviour {
 		//Destroy (other.gameObject);
 		if (other.gameObject.name == "Astroid(Clone)") {
 			Destroy (other.gameObject);
-			Debug.Log ("SPEED DOWN");
 			FOV.SpeedDown ();
 			MoveForward.SpeedAstroidDown ();
 			FeedbackRed = true;
 			StartCoroutine(Red());
 		} else if (other.gameObject.name == "SpeedRing(Clone)") {
 			Destroy (other.gameObject);
-			Debug.Log ("SPEED BOOST");
 			FOV.SpeedBoost ();
 			MoveForward.SpeedRingBoost ();
 			FeedbackGreen = true;
@@ -28,6 +26,7 @@ public class CillisonScript : MonoBehaviour {
 
 		} else if (other.gameObject.name == "Pillar(Clone)") {
 			MoveForward.SpeedAstroidDown ();
+			FOV.SpeedDown();
 			FeedbackRed = true;
 			StartCoroutine(Red());
 		}

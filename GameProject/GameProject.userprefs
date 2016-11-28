@@ -1,16 +1,11 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\CameraMovement.cs">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\FOV.cs">
     <Files>
-      <File FileName="Assets\Scripts\PowerUps.cs" Line="50" Column="47" />
-      <File FileName="Assets\Scripts\CillisonScript.cs" Line="26" Column="21" />
-      <File FileName="Assets\Scripts\PillarScript.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\EmpCollision.cs" Line="10" Column="36" />
-      <File FileName="Assets\Scripts\ShipMovement.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\MoveForward.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\FeedBackScript.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\Spawner.cs" Line="34" Column="115" />
-      <File FileName="Assets\Scripts\CameraMovement.cs" Line="21" Column="28" />
+      <File FileName="Assets\Scripts\FOV.cs" Line="40" Column="69" />
+      <File FileName="Assets\Scripts\ShipMovement.cs" Line="7" Column="19" />
+      <File FileName="Assets\Scripts\MoveForward.cs" Line="28" Column="2" />
+      <File FileName="Assets\Scripts\CillisonScript.cs" Line="29" Column="20" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

@@ -30,14 +30,10 @@ public class MoveForward : MonoBehaviour {
 	{
 		speed += 50.0f;
 		ShipMovement.movementSpeed += 1.5f;
-		print (ShipMovement.movementSpeed);
-		print (speed);
 	}
 	public static void SpeedAstroidDown() 
 	{
 		speed -= 50.0f;
 		ShipMovement.movementSpeed -= 1.5f;
-		print (ShipMovement.movementSpeed);
-		print (speed);
 	}
 }
