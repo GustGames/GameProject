@@ -26,18 +26,22 @@ public class BasicAI : MonoBehaviour {
 		}
 	}
 
-	void calcuateVec(){
-		/**
+    void calcuateVec(){
+        /**
 		 * getting the vector between two points
 		 * in this case speed ring and AI
 		 **/
+        Vector3 speedring = new Vector3(transform.position.x, GameObject.Find("SpeedRing(Clone)").transform.position.x, 0);
+        Debug.Log(speedring);
+         // Debug.DrawLine(transform.position, GameObject.Find("SpeedRing(Clone)").transform.position, Color.red);
 	}
 	
 	// Update is called once per frame
 	void Update (){
 		MoveToRing ();
-		Debug.DrawLine(transform.position, GameObject.Find("SpeedRing(Clone)").transform.position, Color.red);
-		Debug.DrawLine (transform.forward, player.transform.position, Color.green);
-		//calcuateVec ();
-	}
+        calcuateVec();
+		Debug.DrawLine (transform.position, player.transform.position, Color.green);
+        Debug.DrawLine(transform.position, GameObject.Find("SpeedRing(Clone)").transform.position, Color.red);
+        //calcuateVec ();
+    }
 }
