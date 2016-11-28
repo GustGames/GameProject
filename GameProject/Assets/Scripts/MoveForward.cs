@@ -4,12 +4,12 @@ using System.Collections;
 public class MoveForward : MonoBehaviour {
 
 	public static float speed;
-	public static float standardSpeed = 100.0f;
+	public static float standardSpeed = 1.0f;
 	public  float acceleration = 0.5f;
 
 
 	void Start(){
-		speed = 30.0f;
+		speed = 1.0f;
 	}
 
 	// Update is called once per frame
@@ -22,7 +22,7 @@ public class MoveForward : MonoBehaviour {
 
 		transform.position += transform.forward*speed*Time.deltaTime;		//Actual movement.
 		if (speed <= 30) {
-			speed = 30;
+			speed = 1;
 		}
 	}
 
