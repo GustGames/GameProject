@@ -11,13 +11,13 @@ public class FOV : MonoBehaviour {
 	void Start (){
 		Camera.main.fieldOfView = 170;		 
 		warp = false;
-		sboost = false;
 
 	}
 	// Update is called once per frame
 	void Update () {
 		if (Input.GetKey ("space") && ProgressBar.percent >= 100 ) {
 			warp = true;
+			sboost = false;
 		}
 		if (warp == true) {
 			Warp ();
@@ -36,10 +36,10 @@ public class FOV : MonoBehaviour {
 				startwarp = true;
 			}
 		}
-		if (sboost == true) {
-			Camera.main.fieldOfView = Mathf.Lerp (Camera.main.fieldOfView, 90, 2 * Time.deltaTime);
+		if (sboost == true && warp == false) {
+			Camera.main.fieldOfView = Mathf.Lerp (Camera.main.fieldOfView, 85, 3 * Time.deltaTime);
 
-		} else if (sboost == false && startwarp == true) {
+		} else if (sboost == false && startwarp == true && warp == false) {
 			Camera.main.fieldOfView = Mathf.Lerp (Camera.main.fieldOfView, 40, 1 * Time.deltaTime);
 			if (Camera.main.fieldOfView <= 70)
 			{
