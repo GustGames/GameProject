@@ -22,7 +22,7 @@ public class MoveForward : MonoBehaviour {
 
 		transform.position += transform.forward*speed*Time.deltaTime;		//Actual movement.
 		if (speed <= 30) {
-			speed = 1;
+			speed = 30;
 		}
 	}
 

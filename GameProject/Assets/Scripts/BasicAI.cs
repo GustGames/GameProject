@@ -40,10 +40,10 @@ public class BasicAI : MonoBehaviour {
 
 		Debug.Log (angle);
 
-		if (angle > 140f) {
+		if (angle > 40f) {
 			Destroy(GameObject.Find("SpeedRing(Clone)"));
 			print ("DESTROYED");
-		} else if (angle < 140f) {
+		} else if (angle < 40f) {
 			transform.LookAt (GameObject.Find("SpeedRing(Clone)").transform.position);
 			transform.position += transform.forward*speed*Time.deltaTime;
 			print ("Infront");
