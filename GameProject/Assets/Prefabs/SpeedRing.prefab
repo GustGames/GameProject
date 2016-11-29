@@ -11,8 +11,7 @@ GameObject:
   - 33: {fileID: 3383132}
   - 136: {fileID: 13685062}
   - 23: {fileID: 2323768}
-  - 114: {fileID: 11406138}
-  - 108: {fileID: 10890348}
+  - 108: {fileID: 10860584}
   m_Layer: 0
   m_Name: SpeedRing
   m_TagString: Untagged
@@ -26,9 +25,9 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 125984}
-  m_LocalRotation: {x: 0, y: 1, z: 0, w: -1.62920685e-07}
-  m_LocalPosition: {x: 2.09184647, y: 1.33480144, z: 3.54292202}
-  m_LocalScale: {x: 1.87677646, y: 1.87677491, z: 1.87677491}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 2.12772274, y: 1.03863811, z: -163.951324}
+  m_LocalScale: {x: 1.87, y: 1.87, z: 1.87}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -62,8 +61,8 @@ MeshFilter:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 125984}
-  m_Mesh: {fileID: 4300000, guid: 8da40b5d72936f845897aa7e79b6e41d, type: 3}
---- !u!108 &10890348
+  m_Mesh: {fileID: 4300000, guid: 278ef5916fd58a040b5e99264c4297b6, type: 3}
+--- !u!108 &10860584
 Light:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -72,9 +71,9 @@ Light:
   m_Enabled: 1
   serializedVersion: 6
   m_Type: 2
-  m_Color: {r: 0, g: 1, b: .503448248, a: 1}
+  m_Color: {r: .23729454, g: .702113926, b: .977941155, a: 1}
   m_Intensity: 8
-  m_Range: 20
+  m_Range: 25
   m_SpotAngle: 30
   m_CookieSize: 10
   m_Shadows:
@@ -91,21 +90,10 @@ Light:
     serializedVersion: 2
     m_Bits: 4294967295
   m_Lightmapping: 4
-  m_BounceIntensity: 0
+  m_BounceIntensity: 1
   m_ShadowRadius: 0
   m_ShadowAngle: 0
   m_AreaSize: {x: 1, y: 1}
---- !u!114 &11406138
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 125984}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1b5f4e7eb3304f64e9667c9abad73827, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!136 &13685062
 CapsuleCollider:
   m_ObjectHideFlags: 1
@@ -115,8 +103,8 @@ CapsuleCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  m_Radius: 1.16857755
-  m_Height: .416552961
+  m_Radius: 1.15663481
+  m_Height: 2
   m_Direction: 1
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!1001 &100100000
@@ -141,15 +129,26 @@ Prefab:
     - target: {fileID: 0}
       propertyPath: m_IsKinematic
       value: 0
+<<<<<<< HEAD
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: m_Enabled
+=======
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 0}
+      propertyPath: m_LocalRotation.y
+>>>>>>> master
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
       propertyPath: m_LocalRotation.w
       value: 1
       objectReference: {fileID: 0}
+<<<<<<< HEAD
     - target: {fileID: 0}
       propertyPath: m_Enabled
       value: 1
@@ -162,6 +161,8 @@ Prefab:
       propertyPath: m_IsTrigger
       value: 0
       objectReference: {fileID: 0}
+=======
+>>>>>>> master
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 125984}

@@ -2,25 +2,39 @@
 using System.Collections;
 public class Spawner : MonoBehaviour {
 
-	public float speedRingSpawnRate = 2;
-	public float asteroidSpawnRate = 1;
-
 	public GameObject SpeedRing;
 	public GameObject Astroid;
 	public GameObject PlayerShip;
 	public GameObject MovingLevel;
 	public GameObject Pillar;
+<<<<<<< HEAD
+=======
+	public GameObject FeedBack;
+	public Texture2D Red;
+>>>>>>> master
 
 	
 	void Start () {
 		InvokeRepeating ("SpawnSpeedRing", 1, 5);
+<<<<<<< HEAD
 		InvokeRepeating ("SpawnSpeedRing", 1, 3);
 		InvokeRepeating ("SpawnAstroid", 1, 0.3f);
 		InvokeRepeating ("SpawnPillar", 1, 2);
+=======
+		InvokeRepeating ("SpawnSpeedRing", 1, 2.5f);
+		InvokeRepeating ("SpawnAstroid", 1, 0.3f);
+		InvokeRepeating ("SpawnAstroid", 1, 0.6f);
+		InvokeRepeating ("SpawnPillar", 1, 2);
+		//Invoke ("SpawnFeedBack", 2);
+>>>>>>> master
 	}
 
 
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> master
 	void SpawnSpeedRing()
 	{
 		GameObject SpeedRingClone1 = Instantiate (SpeedRing, new Vector3 (Random.Range (MovingLevel.transform.position.x+5,MovingLevel.transform.position.x+30), Random.Range (MovingLevel.transform.position.y+5, MovingLevel.transform.position.y+15), Random.Range(PlayerShip.transform.position.z + 250, PlayerShip.transform.position.z + 500)), Quaternion.Euler (0, 0, 0)) as GameObject;
@@ -38,6 +52,7 @@ public class Spawner : MonoBehaviour {
 	}
 	void SpawnPillar()
 	{
+<<<<<<< HEAD
 		if (Application.loadedLevelName == "Level1"){
 			GameObject PillarClone = Instantiate (Pillar, new Vector3 (Random.Range (MovingLevel.transform.position.x -5,MovingLevel.transform.position.x+5), Random.Range (MovingLevel.transform.position.y+5, MovingLevel.transform.position.y+5), Random.Range(PlayerShip.transform.position.z + 400, PlayerShip.transform.position.z + 500)), Quaternion.Euler(0.0f, 0.0f, Random.Range(0.0f, 360.0f))) as GameObject;
 			PillarClone.transform.parent = GameObject.Find("MovingLevel").transform;
@@ -50,6 +65,27 @@ public class Spawner : MonoBehaviour {
 
 	}
 
+=======
+
+		GameObject PillarClone = Instantiate (Pillar, new Vector3 (Random.Range (MovingLevel.transform.position.x -5,MovingLevel.transform.position.x+5), Random.Range (MovingLevel.transform.position.y+5, MovingLevel.transform.position.y+5), Random.Range(PlayerShip.transform.position.z + 400, PlayerShip.transform.position.z + 500)), Quaternion.Euler(0.0f, 0.0f, Random.Range(0.0f, 360.0f))) as GameObject;
+		PillarClone.transform.parent = GameObject.Find("MovingLevel").transform;
+
+
+	}
+	void SpawnFeedBack()
+	{
+
+		//GameObject FeedBackClone = Instantiate (FeedBack) as GameObject;
+		//float width = Screen.width;
+		//float height = Screen.height;
+		//GameObject FeedBackClone = Instantiate (FeedBack, new Vector2(width,height), Quaternion.Euler (0, 0, 0))  as GameObject;
+		//GUI.DrawTexture(new Rect(0,0,Screen.width,Screen.height), Red); 
+		//FeedBackClone.transform.parent = GameObject.Find ("Canvas").transform;
+
+		
+
+	}
+>>>>>>> master
 	/**void SpawnSpeedRing()
 	{
 		float xa = Random.Range (MovingLevel.transform.position.x+10, MovingLevel.transform.position.x + 30);

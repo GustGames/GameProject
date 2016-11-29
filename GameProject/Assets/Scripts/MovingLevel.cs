@@ -11,6 +11,12 @@ public class MovingLevel : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		rotationspeed = ShipMovement.movementSpeed*8.0f;
+<<<<<<< HEAD
+=======
+
+>>>>>>> master
 		transform.RotateAround (transform.up, Input.GetAxis ("Horizontal") * rotationspeed * Mathf.Deg2Rad * Time.deltaTime);
-	}
+
+
+}
 }

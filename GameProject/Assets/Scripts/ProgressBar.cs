@@ -23,6 +23,7 @@ public class ProgressBar : MonoBehaviour {
 		if (percent < 100) {
 			Txtprogress.text = string.Format ("{0} %", percent);
 		}
+<<<<<<< HEAD
 		if (percent >= 100) {
 			percent = 100;
 			Txtprogress.text = string.Format ("{0} %", percent);
@@ -31,6 +32,16 @@ public class ProgressBar : MonoBehaviour {
 		prog.y = Mathf.Clamp(prog.y, Screen.height-100, Screen.height);
 		prog.x = Mathf.Clamp(prog.x, Screen.width-100, Screen.width);
 		this.transform.position = prog;
+=======
+		else if (percent >= 100) {
+			percent = 100;
+			Txtprogress.text = string.Format ("{0} %", percent);
+		}
+		/**Vector2 prog = this.transform.position;
+		prog.y = Mathf.Clamp(prog.y, Screen.height-100, Screen.height);
+		prog.x = Mathf.Clamp(prog.x, Screen.width-100, Screen.width);
+		this.transform.position = prog;**/
+>>>>>>> master
 
 
 	}
