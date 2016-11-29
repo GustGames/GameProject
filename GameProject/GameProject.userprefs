@@ -1,13 +1,11 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\CillisonScript.cs">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\FOV.cs">
     <Files>
-      <File FileName="Assets\Scripts\CillisonScript.cs" Line="37" Column="3" />
-      <File FileName="Assets\Scripts\FOV.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\MoveForward.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\Spawner.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\PowerUps.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\ShipMovement.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\FOV.cs" Line="40" Column="69" />
+      <File FileName="Assets\Scripts\ShipMovement.cs" Line="7" Column="19" />
+      <File FileName="Assets\Scripts\MoveForward.cs" Line="28" Column="2" />
+      <File FileName="Assets\Scripts\CillisonScript.cs" Line="29" Column="20" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

@@ -12,7 +12,7 @@ GameObject:
   - 65: {fileID: 6502586}
   - 23: {fileID: 2318450}
   - 114: {fileID: 11464716}
-  - 114: {fileID: 11494202}
+  - 114: {fileID: 11411528}
   m_Layer: 5
   m_Name: Pillar
   m_TagString: Untagged
@@ -75,6 +75,17 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &11411528
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 121102}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ca8129f1a132700488e5a821ea5e9e8d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &11464716
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -84,17 +95,6 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c0d28845d65f77f4cbd5388e46e39712, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &11494202
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 121102}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1cb2032ab6bcec04d8a246404a3256a3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1001 &100100000

@@ -9,7 +9,7 @@ public class ShipMovement : MonoBehaviour
 	public GameObject MovingLevel;
 	void Start ()
 	{
-		movementSpeed = 5.0f;
+		movementSpeed = 7.0f;
 	}
 
 	// Update is called once per frame

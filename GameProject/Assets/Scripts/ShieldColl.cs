@@ -1,26 +1,27 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class PowerUpCollision : MonoBehaviour {
-
+public class ShieldColl : MonoBehaviour {
+	
 	void OnTriggerEnter(Collider other){
 		//Destroy (other.gameObject);
 		if (other.gameObject.name == "Astroid(Clone)") {
 			Destroy (other.gameObject);
 		} else if (other.gameObject.name == "Pillar(Clone)") {
 			Destroy (other.gameObject);
-
+			
 		}
 		else if (other.gameObject.name == "SpeedRing(Clone)") {
 			Destroy (other.gameObject);
 			
 		}
-
+		
 	}
-	
-	
-	
-	/**
+}
+
+
+
+/**
 	void OnCollisionEnter ( Collision collision ){
 		Debug.Log ("Enter Called");
 
@@ -39,4 +40,4 @@ public class PowerUpCollision : MonoBehaviour {
 			MoveForward.SpeedAstroidDown();
 		}
 	}**/
-}
+

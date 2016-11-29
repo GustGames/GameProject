@@ -47,18 +47,19 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\Materials\New Text Document.cs" />
-     <Compile Include="Assets\Scripts\Asteroid.cs" />
      <Compile Include="Assets\Scripts\CameraMovement.cs" />
      <Compile Include="Assets\Scripts\CillisonScript.cs" />
+     <Compile Include="Assets\Scripts\Delete.cs" />
+     <Compile Include="Assets\Scripts\EmpCollision.cs" />
      <Compile Include="Assets\Scripts\FOV.cs" />
      <Compile Include="Assets\Scripts\FeedBackScript.cs" />
      <Compile Include="Assets\Scripts\LightingScript.cs" />
      <Compile Include="Assets\Scripts\MoveForward.cs" />
      <Compile Include="Assets\Scripts\MovingLevel.cs" />
      <Compile Include="Assets\Scripts\PillarScript.cs" />
-     <Compile Include="Assets\Scripts\PowerUpCollision.cs" />
      <Compile Include="Assets\Scripts\PowerUps.cs" />
      <Compile Include="Assets\Scripts\ProgressBar.cs" />
+     <Compile Include="Assets\Scripts\ShieldColl.cs" />
      <Compile Include="Assets\Scripts\ShipMovement.cs" />
      <Compile Include="Assets\Scripts\SkyBoxScript.cs" />
      <Compile Include="Assets\Scripts\Spawner.cs" />

@@ -1,13 +1,12 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class Asteroid : MonoBehaviour {
-
-	int timeToDestroy = 10;
+public class Delete : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-		Destroy (gameObject, timeToDestroy);
+		Destroy (gameObject, 6.5f);
+
 	
 	}
 	
