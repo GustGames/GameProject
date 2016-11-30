@@ -3517,8 +3517,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   height: 0
   Ship: {fileID: 100000, guid: d3b74fbd5caff6e4aa4f8fb5b2485442, type: 3}
-  textureImage: {fileID: 2800000, guid: cbec04b3a09988a42b81c0db04a03a72, type: 3}
-  textureImage1: {fileID: 2800000, guid: 3ef9042a2670d7e489431a283f045ba8, type: 3}
+  textureImage: {fileID: 2800000, guid: 1b8773126e58ed14285b637e8dfb913d, type: 3}
+  textureImage1: {fileID: 2800000, guid: 8f8b79556b57ed94f9dc6a0d08d8d498, type: 3}
   FeedbackGreen: 0
   FeedbackRed: 0
 --- !u!65 &810636085
