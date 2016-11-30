@@ -15,20 +15,32 @@ public class CillisonScript : MonoBehaviour {
 			FOV.SpeedDown ();
 			MoveForward.SpeedAstroidDown ();
 			FeedbackRed = true;
-			StartCoroutine(Red());
+			StartCoroutine (Red ());
 		} else if (other.gameObject.name == "SpeedRing(Clone)") {
 			Destroy (other.gameObject);
 			FOV.SpeedBoost ();
 			MoveForward.SpeedRingBoost ();
+			LVL2MoveForward.SpeedRingBoost ();
 			FeedbackGreen = true;
-			StartCoroutine(Green());
+			StartCoroutine (Green ());
 		} else if (other.gameObject.name == "MovingLevel") {
 
 		} else if (other.gameObject.name == "Pillar(Clone)") {
 			MoveForward.SpeedAstroidDown ();
-			FOV.SpeedDown();
+			FOV.SpeedDown ();
 			FeedbackRed = true;
-			StartCoroutine(Red());
+			StartCoroutine (Red ());
+		} else if (other.gameObject.name == "VertTunnelLaser(Clone)") {
+			LVL2MoveForward.SpeedAstroidDown ();
+			FOV.SpeedDown ();
+			FeedbackRed = true;
+			StartCoroutine (Red ());
+		}else if (other.gameObject.name == "HorTunnelLaser(Clone)") {
+			LVL2MoveForward.SpeedAstroidDown ();
+			FOV.SpeedDown ();
+			FeedbackRed = true;
+			StartCoroutine (Red ());
+
 		}
 		else {
 			Debug.Log ("No Collision");

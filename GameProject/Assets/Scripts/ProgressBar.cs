@@ -17,8 +17,8 @@ public class ProgressBar : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		float speed = MoveForward.speed;
-		float amount = (MoveForward.speed / 300.0f);
-		percent = (int)speed/3;
+		float amount = (MoveForward.speed / 400.0f);
+		percent = (int)speed/4;
 		background.fillAmount = amount;
 		if (percent < 100) {
 			Txtprogress.text = string.Format ("{0} %", percent);

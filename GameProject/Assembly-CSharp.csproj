@@ -46,14 +46,25 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\Materials\Materials 1\New Text Document.cs" />
      <Compile Include="Assets\Materials\New Text Document.cs" />
+     <Compile Include="Assets\Materials\New Text Document1.cs" />
      <Compile Include="Assets\Scripts\CameraMovement.cs" />
      <Compile Include="Assets\Scripts\CillisonScript.cs" />
      <Compile Include="Assets\Scripts\Delete.cs" />
      <Compile Include="Assets\Scripts\EmpCollision.cs" />
      <Compile Include="Assets\Scripts\FOV.cs" />
      <Compile Include="Assets\Scripts\FeedBackScript.cs" />
+     <Compile Include="Assets\Scripts\Level2Scripts\FloorScript.cs" />
+     <Compile Include="Assets\Scripts\Level2Scripts\LVL2FOV.cs" />
+     <Compile Include="Assets\Scripts\Level2Scripts\LVL2MoveForward.cs" />
+     <Compile Include="Assets\Scripts\Level2Scripts\LVL2ProgressBar.cs" />
+     <Compile Include="Assets\Scripts\Level2Scripts\LVL2ShipMovement.cs" />
+     <Compile Include="Assets\Scripts\Level2Scripts\LVL2Spawner.cs" />
+     <Compile Include="Assets\Scripts\Level2Scripts\SpawnNewChunk.cs" />
+     <Compile Include="Assets\Scripts\Level2Scripts\TunnelScript.cs" />
      <Compile Include="Assets\Scripts\LightingScript.cs" />
+     <Compile Include="Assets\Scripts\LoadLevel1.cs" />
      <Compile Include="Assets\Scripts\MoveForward.cs" />
      <Compile Include="Assets\Scripts\MovingLevel.cs" />
      <Compile Include="Assets\Scripts\PillarScript.cs" />

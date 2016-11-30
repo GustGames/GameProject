@@ -19,6 +19,7 @@ public class FOV : MonoBehaviour {
 			warp = true;
 			sboost = false;
 		}
+
 		if (warp == true) {
 			Warp ();
 		} 	//Restores the FOV back to its original value when it's above it. (Like when SpeedBoost is called.)
